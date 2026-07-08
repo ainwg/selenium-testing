@@ -42,11 +42,11 @@ const { Builder, By } = require("selenium-webdriver");
 
     // Print the results
     for (let i = 0; i < titles.length; i++) {
-      console.log(`Title: ${titles[i]}, Price: ${prices[i]}`);
+      console.log(`Title: ${titles[i]},Price: ${prices[i]}`);
     }
 
     // Save the results to a CSV file
-    let csvContent = "Title, Price\n";
+    let csvContent = "Title,Price\n";
     for (let i = 0; i < titles.length; i++) {
       csvContent += `"${titles[i]}","${prices[i]}"\n`;
     }
